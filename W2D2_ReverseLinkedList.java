@@ -8,8 +8,22 @@ public class W2D2_ReverseLinkedList {
      * @return The head of the reversed linked list.
      */
     public ListNode reverseList(ListNode head) {
-        // TODO: Implement the iterative reversal logic.
-        return null; // Placeholder - replace with your implementation
+        
+        ListNode curr = head;
+        ListNode prev = null; 
+        ListNode next = null;
+
+        while( curr != null){
+            next = curr.next;
+            curr.next = prev;
+            
+            prev = curr;
+            curr = next; 
+
+
+        }
+
+        return prev; 
     }
 
     // Main method to test the reversal
