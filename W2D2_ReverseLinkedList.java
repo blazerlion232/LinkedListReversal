@@ -29,11 +29,11 @@ public class W2D2_ReverseLinkedList {
     // Main method to test the reversal
     public static void main(String[] args) {
         // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
+        ListNode head = new ListNode(10);
+        head.next = new ListNode(20);
+        head.next.next = new ListNode(30);
+        head.next.next.next = new ListNode(40);
+        head.next.next.next.next = new ListNode(50);
 
         System.out.println("Original list:");
         printList(head);
